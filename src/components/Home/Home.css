@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  height: calc(100vh - 80px);
+  background-image: url('../img/header.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+@media (max-width: 575px) {
+  .header {
+    height: calc(100vh - 140px);
+  }
+}
+
+.overlay {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgba(81, 74, 157, 0.75);
+  background: linear-gradient(to right, rgba(81, 74, 157, 0.75) , rgba(36, 198, 220, 0.75));
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .overlay {
+    height: calc(100vh - 140px);
+  }
+}
+
+.main {
+  text-align: center;
+}
+
+.title {
+  animation-delay: .5s;
+  opacity: 0;
+  animation: pop-in .8s cubic-bezier(0, .9, .3, 1.2) forwards;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 8rem;
+  }
+}
+
+.hr {
+  animation-delay: .7s;
+  opacity: 0;
+  animation: pop-in .8s cubic-bezier(0, .9, .3, 1.2) forwards;
+}
+
+.sub {
+  animation-delay: .9s;
+  opacity: 0;
+  animation: pop-in .8s cubic-bezier(0, .9, .3, 1.2) forwards;
+  font-size: 1.5rem;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

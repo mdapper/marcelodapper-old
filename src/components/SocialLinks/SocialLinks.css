@@ -1,0 +1,27 @@
+.list {
+  max-width: 250px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+.item {
+  flex: 1;
+}
+.link:hover path,
+.link:hover polygon {
+  fill: #24C6DC;
+}
+.link svg {
+  transform: scale(1);
+  transition: transform .3s ease-out;
+}
+.link svg:hover {
+  transform: scale(1.2) translateY(-8px);
+}
+
+.link path,
+.link polygon {
+  fill: #fff;
+  transition: fill .3s ease-out;
+}

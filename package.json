@@ -1,0 +1,39 @@
+{
+  "name": "marcelodapper",
+  "version": "1.0.0",
+  "description": "Marcelo Dapper Portfolio",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --open",
+    "lint": "eslint src",
+    "build": "./node_modules/.bin/webpack -p --config webpack.config.production.js"
+  },
+  "author": "Marcelo Dapper",
+  "license": "MIT",
+  "browserslist": [
+    "> 2%",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.18.0",
+    "eslint-plugin-react": "^6.10.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router-dom": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "postcss-loader": "^1.3.3",
+    "react-hot-loader": "next",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
