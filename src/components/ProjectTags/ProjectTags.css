@@ -1,0 +1,13 @@
+.list {
+  margin-top: 1.5rem;
+}
+.item {
+  background-color: #424242;
+  border-radius: 3px;
+  color: #BDBDBD;
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 1rem;
+  padding: 3px 15px;
+  font-size: 16px;
+}

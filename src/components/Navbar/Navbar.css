@@ -1,44 +1,44 @@
-.navbar{
+.nav {
   background-color:#514A9D;
   background:linear-gradient(to right, #514A9D, #24C6DC);
 }
 
-.navbar__header {
+.header {
   flex: 1;
 }
 
 @media (max-width: 575px) {
-  .navbar__header {
+  .header {
     width:100%;
   }
 }
 
-.navbar__brand {
+.brand {
   display:block;
   padding:8px 0;
 }
 
-.navbar__brand img {
+.brand img {
   width:64px;
   height:64px;
   margin:0 auto;
 }
 
 @media (min-width: 768px) {
-  .navbar__brand img {
+  .brand img {
     margin:0;
   }
 }
 
 @media (max-width: 575px) {
-  .navbar__brand {
+  .brand {
     text-align:center
   }
 }
 
 .navbar__nav {
   text-align:right;
-  padding:16px 0;
+  padding: 18px 0;
   margin: 0;
 }
 
@@ -48,29 +48,36 @@
   }
 }
 
-.navbar__item {
+.item {
   display:inline-block;
 }
 
-.navbar__item a {
+.item a {
   color: #fff;
   display:block;
-  padding:10px 10px;
+  padding: 8px 16px;
   margin:0 5px;
   text-transform:uppercase;
   text-decoration:none;
+  border-radius: 5px;
 }
 
-.navbar__item a:hover {
-  color:#514A9D;
+.item a:hover {
+  background-color:#514A9D;
+  color: #fff;
 }
 
 @media (min-width: 576px) {
-  .navbar{
+  .nav{
     position:fixed;
     width:100%;
     top:0;
     left:0;
     z-index: 100;
   }
+}
+
+.item :global .active {
+  background-color: #514A9D;
+  color: #fff;
 }

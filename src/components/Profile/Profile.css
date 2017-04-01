@@ -17,7 +17,7 @@
   padding-top: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .image {
     padding-top: 0;
     flex: 1;
