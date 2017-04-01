@@ -1,0 +1,23 @@
+.overlay {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgba(0,96,100 ,0.9);
+  background: linear-gradient(to right, rgba(0,96,100 ,0.9), rgba(36, 198, 220, 0.75));
+  min-height: calc(100vh - 290px);
+}
+
+.container {
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .container {
+    flex: 1;
+  }
+  .container:not(:last-of-type) {
+    margin-right: 24px;
+  }
+}
+
+.title {
+  padding-bottom: 24px;
+}
