@@ -1,0 +1,21 @@
+.skill {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+}
+.skill path:not(:global .no-fill) {
+  fill: #FAFAFA;
+}
+
+.name {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
