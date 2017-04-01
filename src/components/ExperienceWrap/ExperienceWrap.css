@@ -1,0 +1,13 @@
+.wrap {
+  position: relative;
+}
+.wrap::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #FAFAFA;
+  position: absolute;
+  left: 1.5rem;
+  top: 0;
+}
