@@ -6,7 +6,6 @@
 .header {
   flex: 1;
 }
-
 @media (max-width: 575px) {
   .header {
     width:100%;
@@ -29,24 +28,19 @@
     margin:0;
   }
 }
-
 @media (max-width: 575px) {
   .brand {
     text-align:center
   }
 }
-
-.navbar__nav {
-  text-align:right;
-  padding: 18px 0;
-  margin: 0;
-}
-
-@media (max-width: 575px) {
-  .navbar__nav {
-    display:none;
+@media (min-width: 576px) {
+  .menuList {
+    text-align:right;
+    padding: 18px 0;
+    margin: 0;
   }
 }
+
 
 .item {
   display:inline-block;
@@ -61,23 +55,78 @@
   text-decoration:none;
   border-radius: 5px;
 }
-
-.item a:hover {
-  background-color:#514A9D;
-  color: #fff;
+@media (max-width: 575px) {
+  .item a {
+    color: #212121;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .item a:focus {
+    text-decoration: none;
+  }
 }
 
+
 @media (min-width: 576px) {
-  .nav{
+  .item a:hover {
+    background-color:#514A9D;
+    color: #fff;
+  }
+  .nav {
     position:fixed;
     width:100%;
     top:0;
     left:0;
     z-index: 100;
   }
+  .item :global .active {
+    background-color: #514A9D;
+    color: #fff;
+  }
 }
 
-.item :global .active {
-  background-color: #514A9D;
-  color: #fff;
+
+@media (min-width: 576px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu {
+    background-color: #fff;
+    box-shadow: 5px 0px 11px 0px rgba(50,50,50,0.2);
+    display: block;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    left:0;
+    z-index: 100;
+    min-height: 60px;
+  }
+  .item {
+    position: relative;
+    flex: 1;
+  }
+  .item :global .active {
+    color: #514A9D;
+    font-weight: bold;
+  }
+  .item :global .active path,
+  .item :global .active polygon {
+    fill: #514A9D;
+  }
+  .label {
+    font-size: 0.75rem;
+    display: block;
+    line-height: 10px;
+  }
+
+  .menuList {
+    display: flex;
+  }
 }
