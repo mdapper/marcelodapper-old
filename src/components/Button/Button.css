@@ -1,0 +1,24 @@
+.default {
+  background-color: transparent;
+  border: 2px solid #24C6DC;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-property: border-color, background-color, color;
+  transition-duration: 300ms, 700ms, 700ms;
+  transition-delay: 100ms;
+  min-width: 120px;
+  cursor: pointer;
+}
+.default:hover,
+.default:focus {
+  border-color: #514A9D;
+  background-color: #514A9D;
+  outline: none;
+  color: #FAFAFA;
+}

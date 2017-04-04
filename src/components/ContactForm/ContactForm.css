@@ -1,0 +1,47 @@
+.form {
+  margin-top: 40px;
+}
+
+.group {
+  margin-top: 2rem;
+}
+
+.control {
+  display: block;
+  width: 100%;
+  padding: .5rem 1rem;
+  line-height: 1.5;
+  color: #FAFAFA;
+  background: 0 0;
+  background-image: none;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 2px solid #24C6DC;
+  border-radius: 0;
+  transition: border ease-in-out .3s,
+              box-shadow ease-in-out .15s;
+}
+.control:active,
+.control:focus {
+  border: 1px solid #514A9D;
+  border-bottom: 4px solid #514A9D;
+  outline: none;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.messageName,
+.messageEmail,
+.messageMessage,
+.messageSubmitError,
+.messageSubmitSucess {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #e57373;
+}
+.messageSubmitSucess {
+  color: #66BB6A;
+}

@@ -1,0 +1,9 @@
+@media (min-width: 992px) {
+  .header {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.title {
+  line-height: 1;
+}

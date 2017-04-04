@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './SocialLinks.css';
 
-import IconMail from '../IconMail/IconMail';
-import IconTwitter from '../IconTwitter/IconTwitter';
-import IconGithub from '../IconGithub/IconGithub';
+import IconMail from '../Icons/IconMail';
+import IconTwitter from '../Icons/IconTwitter';
+import IconGithub from '../Icons/IconGithub';
 
 const SocialLinks = () => (
   <ul className={styles.list}>

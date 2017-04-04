@@ -1,76 +1,138 @@
-.navbar{
+.nav {
   background-color:#514A9D;
   background:linear-gradient(to right, #514A9D, #24C6DC);
 }
 
-.navbar__header {
+.header {
   flex: 1;
 }
-
-@media (max-width: 575px) {
-  .navbar__header {
+@media (max-width: 767px) {
+  .header {
     width:100%;
   }
 }
 
-.navbar__brand {
+.brand {
   display:block;
   padding:8px 0;
 }
 
-.navbar__brand img {
+.brand img {
   width:64px;
   height:64px;
   margin:0 auto;
 }
 
 @media (min-width: 768px) {
-  .navbar__brand img {
+  .brand img {
     margin:0;
   }
 }
-
-@media (max-width: 575px) {
-  .navbar__brand {
+@media (max-width: 767px) {
+  .brand {
     text-align:center
   }
 }
-
-.navbar__nav {
-  text-align:right;
-  padding:16px 0;
-  margin: 0;
-}
-
-@media (max-width: 575px) {
-  .navbar__nav {
-    display:none;
+@media (min-width: 768px) {
+  .menuList {
+    text-align:right;
+    padding: 18px 0;
+    margin: 0;
   }
 }
 
-.navbar__item {
+
+.item {
   display:inline-block;
 }
 
-.navbar__item a {
+.item a {
   color: #fff;
   display:block;
-  padding:10px 10px;
+  padding: 8px 16px;
   margin:0 5px;
   text-transform:uppercase;
   text-decoration:none;
+  border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .item a {
+    color: #212121;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    padding: 10px 0;
+    margin: 0;
+  }
+  .item a:focus {
+    text-decoration: none;
+  }
 }
 
-.navbar__item a:hover {
-  color:#514A9D;
-}
 
-@media (min-width: 576px) {
-  .navbar{
+@media (min-width: 768px) {
+  .item a:hover {
+    background-color:#514A9D;
+    color: #fff;
+  }
+  .nav {
     position:fixed;
     width:100%;
     top:0;
     left:0;
     z-index: 100;
+  }
+  .item :global .active {
+    background-color: #514A9D;
+    color: #fff;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    background-color: #fff;
+    box-shadow: 5px 0px 11px 0px rgba(50,50,50,0.2);
+    display: block;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    left:0;
+    z-index: 100;
+    min-height: 60px;
+  }
+  .item {
+    position: relative;
+    flex: 1;
+  }
+  .item :global .active {
+    color: #514A9D;
+    font-weight: bold;
+  }
+  .item svg {
+    transition: transform .2s ease-out;
+  }
+  .item :global .active svg {
+    transform: scale(1.25);
+  }
+  .item :global .active path,
+  .item :global .active polygon {
+    fill: #514A9D;
+  }
+  .label {
+    font-size: 0.75rem;
+    display: block;
+    line-height: 10px;
+  }
+
+  .menuList {
+    display: flex;
   }
 }

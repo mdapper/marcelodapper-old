@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  .category {
+    flex: 1;
+  }
+}
+
+.title {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.item {
+  padding-left: 40px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.item::before {
+  content: "";
+  background-image: url('../img/checkmark.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}

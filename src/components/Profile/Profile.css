@@ -1,0 +1,33 @@
+.profile {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 15px;
+}
+
+.image {
+  align-self: center;
+  padding-top: 20px;
+}
+.image img {
+  border-radius: 50%;
+  max-width: 256px;
+}
+
+.bio {
+  padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .image {
+    padding-top: 0;
+    flex: 1;
+  }
+  .image img {
+    max-width: 100%;
+  }
+
+  .bio {
+    padding-left: 60px;
+    flex: 2;
+  }
+}
