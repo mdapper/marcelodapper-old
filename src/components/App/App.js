@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route
 } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
@@ -13,15 +13,16 @@ import Experience from '../Experience/Experience';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 
-import './App.css';
+import './Resets.css';
+import styles from './App.css';
 
 const App = () => (
   <Router>
-    <div>
+    <div className={styles.app}>
       <ScrollToTop/>
       <Navbar />
 
-      <div className="site">
+      <div className={styles.site}>
         <Route exact path="/" component={Home} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
