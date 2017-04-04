@@ -6,7 +6,7 @@
 .header {
   flex: 1;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .header {
     width:100%;
   }
@@ -28,12 +28,12 @@
     margin:0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .brand {
     text-align:center
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .menuList {
     text-align:right;
     padding: 18px 0;
@@ -55,7 +55,7 @@
   text-decoration:none;
   border-radius: 5px;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .item a {
     color: #212121;
     display: block;
@@ -71,7 +71,7 @@
 }
 
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .item a:hover {
     background-color:#514A9D;
     color: #fff;
@@ -90,13 +90,13 @@
 }
 
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .icon {
     display: none;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .menu {
     background-color: #fff;
     box-shadow: 5px 0px 11px 0px rgba(50,50,50,0.2);
@@ -115,6 +115,12 @@
   .item :global .active {
     color: #514A9D;
     font-weight: bold;
+  }
+  .item svg {
+    transition: transform .2s ease-out;
+  }
+  .item :global .active svg {
+    transform: scale(1.25);
   }
   .item :global .active path,
   .item :global .active polygon {

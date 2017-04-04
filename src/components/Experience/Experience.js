@@ -34,19 +34,19 @@ const Experience = () => (
                 icon={<IconWork/>}
               />
               <ExperienceItem
-                period='February 2015 - Present'
+                period='March 2015 - Present'
                 company='Freelance'
                 position='Front End Developer'
                 icon={<IconWork/>}
               />
               <ExperienceItem
-                period='November 2013 - January 2015'
+                period='September 2013 - January 2015'
                 company='Consórcio PSG'
                 position='Software Developer'
                 icon={<IconWork/>}
               />
               <ExperienceItem
-                period='July 2012 - October 2013'
+                period='July 2012 - September 2013'
                 company='Consórcio Pedra Bonita'
                 position='Software Developer'
                 icon={<IconWork/>}

@@ -25,7 +25,6 @@ const SkillsDevelopment = () => (
     <SkillItem icon={<IconSass/>} skillName="Sass" />
     <SkillItem icon={<IconNode/>} skillName="Node.js" />
     <SkillItem icon={<IconExpress/>} skillName="Express" />
-    <SkillItem icon={<IconLaravel/>} skillName="Laravel" />
   </div>
 )
 
