@@ -21,8 +21,9 @@ const Projects = () => (
           projectLiveLink="https://devheroes.io/"
           projectCodeLink="https://devheroes.io/"
         >
-          <p>Objetivo de criar um grid do zero usando flexbox, sem o uso de framework como Bootstrap. Foco em performance optimization. Uso de SVG para icones. Vanilla JavaScript para interações necessárias, como abrir o menu mobile.</p>
-          <p>Primeiro projeto em DevOps. Configuração de um servidor na DigitalOcean com o LEMP Stack e WordPress. Configuração de certificado digital da Let's Encrypt</p>
+          <p>The objective was to create a grid using flex, without the need to use a framework like Bootstrap. To help with that I used Sass, BEM and Gulp.</p>
+          <p>My focus was performance, so I used system fonts, SVG for the icons and vanilla JavaScript where needed. I made a custom WordPress template for these requirements.</p>
+          <p>This also was the first project that I installed and configured a LEMP Stack (Linux, Nginx, MySQL and PHP 7.0) on DigitalOcean. Since I was using my own server I configured a SSL certificate using Let's Encrypt.</p>
           <ProjectTags
             tags={[
               'WordPress',
@@ -44,8 +45,8 @@ const Projects = () => (
           projectImage="dapdem"
           projectLiveLink="https://www.dapper-demo.com/"
         >
-          <p>A store with modern layout.</p>
-          <p>Configuração de um servidor na DigitalOcean com o LEMP Stack e WordPress. Configuração de certificado digital da Let's Encrypt...</p>
+          <p>A store with modern layout using WooCommerce.</p>
+          <p>Installed and configured a LEMP Stack and SSL certificate using Let's Encrypt on DigitalOcean.</p>
           <ProjectTags
             tags={[
               'WordPress',
@@ -69,7 +70,7 @@ const Projects = () => (
           projectLiveLink="http://www.alvarocamina.com.br/"
         >
           <p>An Architecture and Urbanism office in Salvador, BA, Brazil.</p>
-          <p>Configuração de um servidor na DigitalOcean com o LEMP Stack e WordPress. Configuração de certificado digital da Let's Encrypt</p>
+          <p>I made the layout and custom WordPress theme for this modern architecture office to show their latest projects.</p>
           <ProjectTags
             tags={[
               'WordPress',
@@ -80,29 +81,6 @@ const Projects = () => (
               'Bootstrap',
               'Grunt',
               'LEMP'
-            ]}
-          />
-        </ProjectItem>
-      </Row>
-      <Row>
-        <ProjectItem
-          projectTitle="Sougraf"
-          projectImage="sougraf"
-          projectLiveLink="https://sougraf.com/"
-        >
-          <p>A store with modern layout.</p>
-          <p>Configuração de um servidor na DigitalOcean com o LEMP Stack e WordPress. Configuração de certificado digital da Let's Encrypt...</p>
-          <ProjectTags
-            tags={[
-              'WordPress',
-              'WooCommerce',
-              'PHP',
-              'JavaScript',
-              'CSS',
-              'BEM',
-              'Bootstrap',
-              'Gulp',
-              'PagSeguro'
             ]}
           />
         </ProjectItem>

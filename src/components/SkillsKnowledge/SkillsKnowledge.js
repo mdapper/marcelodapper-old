@@ -6,7 +6,6 @@ const SkillsKnowledge = () => (
     <h3 className={styles.title}>Knowledge</h3>
     <ul>
       <li className={styles.item}>BEM</li>
-      <li className={styles.item}>ITCSS</li>
       <li className={styles.item}>SEO</li>
       <li className={styles.item}>ES6</li>
       <li className={styles.item}>Git Flow</li>

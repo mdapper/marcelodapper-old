@@ -1,3 +1,6 @@
+.category {
+  margin-bottom: 32px;
+}
 @media (min-width: 768px) {
   .category {
     flex: 1;
