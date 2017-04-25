@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  HashRouter as Router,
-  Route
-} from 'react-router-dom';
+import {HashRouter as Router, Route} from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 import Navbar from '../Navbar/Navbar';
@@ -19,7 +16,7 @@ import styles from './App.css';
 const App = () => (
   <Router>
     <div className={styles.app}>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Navbar />
 
       <div className={styles.site}>
@@ -33,7 +30,6 @@ const App = () => (
       <Footer />
     </div>
   </Router>
-
 );
 
 export default App;

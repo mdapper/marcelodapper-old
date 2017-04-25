@@ -437,12 +437,12 @@ html {
 body {
 	background: #212121;
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   body {
     padding-bottom: 60px
   }
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   body {
     padding-top: 80px
   }

@@ -1,11 +1,9 @@
 import React from 'react';
 import styles from './ProjectTags.css';
 
-const ProjectTags = (props) => {
+const ProjectTags = props => {
   const tagItens = props.tags.map(tag => {
-    return (
-      <li key={tag} className={styles.item}>{tag}</li>
-    )
+    return <li key={tag} className={styles.item}>{tag}</li>;
   });
 
   return (
@@ -13,6 +11,6 @@ const ProjectTags = (props) => {
       {tagItens}
     </ul>
   );
-}
+};
 
 export default ProjectTags;

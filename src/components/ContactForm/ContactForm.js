@@ -8,7 +8,7 @@ class ContactForm extends React.Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
     };
 
     this.handleChangeName = this.handleChangeName.bind(this);
@@ -36,29 +36,63 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <form name="sendMessage" className={styles.form} noValidate="" onSubmit={this.handleSubmit}>
+      <form
+        name="sendMessage"
+        className={styles.form}
+        noValidate=""
+        onSubmit={this.handleSubmit}
+      >
         <div className={styles.group}>
           <label htmlFor="name" className={styles.label}>Name</label>
-          <input type="text" value={this.state.name} onChange={this.handleChangeName} className={styles.control} placeholder="who are you?" id="name" required="" />
-          <p className={styles.messageName}></p>
+          <input
+            type="text"
+            value={this.state.name}
+            onChange={this.handleChangeName}
+            className={styles.control}
+            placeholder="who are you?"
+            id="name"
+            required=""
+          />
+          <p className={styles.messageName} />
         </div>
         <div className={styles.group}>
           <label htmlFor="email" className={styles.label}>E-mail</label>
-          <input type="email" value={this.state.email} onChange={this.handleChangeEmail} className={styles.control} placeholder="a valid e-mail" id="email" required="" />
-          <p className={styles.messageEmail}></p>
+          <input
+            type="email"
+            value={this.state.email}
+            onChange={this.handleChangeEmail}
+            className={styles.control}
+            placeholder="a valid e-mail"
+            id="email"
+            required=""
+          />
+          <p className={styles.messageEmail} />
         </div>
         <div className={styles.group}>
           <label htmlFor="message" className={styles.label}>Message</label>
-          <textarea rows="5" value={this.state.message} onChange={this.handleChangeMessage} className={styles.control} placeholder="Insert yout request here" id="message" required=""></textarea>
-          <p className={styles.messageMessage}></p>
+          <textarea
+            rows="5"
+            value={this.state.message}
+            onChange={this.handleChangeMessage}
+            className={styles.control}
+            placeholder="Insert yout request here"
+            id="message"
+            required=""
+          />
+          <p className={styles.messageMessage} />
         </div>
         <div className={styles.group}>
-          <input id="submit" type="submit" className={stylesButton.default} value="Submit" />
-          <p className={styles.messageSubmitError}></p>
-          <p className={styles.messageSubmitSucess}></p>
+          <input
+            id="submit"
+            type="submit"
+            className={stylesButton.default}
+            value="Submit"
+          />
+          <p className={styles.messageSubmitError} />
+          <p className={styles.messageSubmitSucess} />
         </div>
       </form>
-    )
+    );
   }
 }
 
