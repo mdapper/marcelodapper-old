@@ -1,6 +1,8 @@
 import React from 'react';
-import {HashRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
+import createBrowserHistory from 'history/createBrowserHistory';
+const history = createBrowserHistory();
 
 import Navbar from '../Navbar/Navbar';
 import Home from '../Home/Home';
@@ -9,22 +11,27 @@ import Projects from '../Projects/Projects';
 import Experience from '../Experience/Experience';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
+import NotFound from '../NotFound/NotFound';
 
 import './Resets.css';
 import styles from './App.css';
 
 const App = () => (
-  <Router>
+  <Router history={history}>
     <div className={styles.app}>
       <ScrollToTop />
       <Navbar />
 
       <div className={styles.site}>
-        <Route exact path="/" component={Home} />
-        <Route path="/skills" component={Skills} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/experience" component={Experience} />
-        <Route path="/contact" component={Contact} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/skills" component={Skills} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/experience" component={Experience} />
+          <Route path="/contact" component={Contact} />
+          <Route component={NotFound} />
+        </Switch>
+
       </div>
 
       <Footer />

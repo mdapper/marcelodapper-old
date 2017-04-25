@@ -58,9 +58,9 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
-    })
+    }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       comments: false
     }),
     new ExtractTextPlugin('css/style-v1.1.css'),
