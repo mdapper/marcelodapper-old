@@ -12,7 +12,7 @@ const Projects = () => (
   <Section>
     <ContainerFull>
       <Row>
-        <SectionHeader titleHeader='Projects' />
+        <SectionHeader titleHeader="Projects" />
       </Row>
       <Row>
         <ProjectItem
@@ -21,9 +21,15 @@ const Projects = () => (
           projectLiveLink="https://devheroes.io/"
           projectCodeLink="https://devheroes.io/"
         >
-          <p>The objective was to create a grid using flex, without the need to use a framework like Bootstrap. To help with that I used Sass, BEM and Gulp.</p>
-          <p>My focus was performance, so I used system fonts, SVG for the icons and vanilla JavaScript where needed. I made a custom WordPress template for these requirements.</p>
-          <p>This also was the first project that I installed and configured a LEMP Stack (Linux, Nginx, MySQL and PHP 7.0) on DigitalOcean. Since I was using my own server I configured a SSL certificate using Let's Encrypt.</p>
+          <p>
+            The objective was to create a grid using flex, without the need to use a framework like Bootstrap. To help with that I used Sass, BEM and Gulp.
+          </p>
+          <p>
+            My focus was performance, so I used system fonts, SVG for the icons and vanilla JavaScript where needed. I made a custom WordPress template for these requirements.
+          </p>
+          <p>
+            This also was the first project that I installed and configured a LEMP Stack (Linux, Nginx, MySQL and PHP 7.0) on DigitalOcean. Since I was using my own server I configured a SSL certificate using Let's Encrypt.
+          </p>
           <ProjectTags
             tags={[
               'WordPress',
@@ -34,7 +40,7 @@ const Projects = () => (
               'Flex',
               'SVG',
               'Gulp',
-              'LEMP'
+              'LEMP',
             ]}
           />
         </ProjectItem>
@@ -46,7 +52,9 @@ const Projects = () => (
           projectLiveLink="https://www.dapper-demo.com/"
         >
           <p>A store with modern layout using WooCommerce.</p>
-          <p>Installed and configured a LEMP Stack and SSL certificate using Let's Encrypt on DigitalOcean.</p>
+          <p>
+            Installed and configured a LEMP Stack and SSL certificate using Let's Encrypt on DigitalOcean.
+          </p>
           <ProjectTags
             tags={[
               'WordPress',
@@ -58,7 +66,7 @@ const Projects = () => (
               'Bootstrap',
               'Gulp',
               'LEMP',
-              'Bcash'
+              'Bcash',
             ]}
           />
         </ProjectItem>
@@ -70,7 +78,9 @@ const Projects = () => (
           projectLiveLink="http://www.alvarocamina.com.br/"
         >
           <p>An Architecture and Urbanism office in Salvador, BA, Brazil.</p>
-          <p>I made the layout and custom WordPress theme for this modern architecture office to show their latest projects.</p>
+          <p>
+            I made the layout and custom WordPress theme for this modern architecture office to show their latest projects.
+          </p>
           <ProjectTags
             tags={[
               'WordPress',
@@ -80,13 +90,13 @@ const Projects = () => (
               'Sass',
               'Bootstrap',
               'Grunt',
-              'LEMP'
+              'LEMP',
             ]}
           />
         </ProjectItem>
       </Row>
     </ContainerFull>
   </Section>
-)
+);
 
 export default Projects;

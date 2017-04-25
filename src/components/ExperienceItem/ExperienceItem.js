@@ -14,6 +14,6 @@ const ExperienceItem = props => (
       <h5 className={styles.position}>{props.position}</h5>
     </div>
   </div>
-)
+);
 
 export default ExperienceItem;

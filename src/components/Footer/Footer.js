@@ -11,12 +11,12 @@ const Footer = () => (
       <SocialLinks />
       <Row>
         <div className={styles.copyright}>
-          Copyright &copy; { getCurrentYear() } &middot; Marcelo Dapper
+          Copyright © {getCurrentYear()} · Marcelo Dapper
         </div>
       </Row>
     </Container>
   </footer>
-)
+);
 
 function getCurrentYear() {
   const currentYear = new Date().getFullYear();

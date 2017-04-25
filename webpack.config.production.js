@@ -54,10 +54,15 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       comments: false
     }),
-    new ExtractTextPlugin('css/style-v1.1.css'),
+    new ExtractTextPlugin('css/style-v1.2.css'),
   ]
 };

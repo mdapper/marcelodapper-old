@@ -23,6 +23,6 @@ const SocialLinks = () => (
       </a>
     </li>
   </ul>
-)
+);
 
 export default SocialLinks;
