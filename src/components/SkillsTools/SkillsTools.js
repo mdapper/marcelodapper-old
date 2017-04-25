@@ -12,13 +12,13 @@ import IconGrunt from '../Icons/IconGrunt';
 const SkillsTools = () => (
   <div className={styles.category}>
     <h3 className={styles.title}>Tools</h3>
-    <SkillItem icon={<IconConsole/>} skillName="Console" />
-    <SkillItem icon={<IconGit/>} skillName="Git" />
-    <SkillItem icon={<IconGithub/>} skillName="GitHub" />
-    <SkillItem icon={<IconWebpack/>} skillName="Webpack" />
-    <SkillItem icon={<IconGulp/>} skillName="Gulp" />
-    <SkillItem icon={<IconGrunt/>} skillName="Grunt" />
+    <SkillItem icon={<IconConsole />} skillName="Console" />
+    <SkillItem icon={<IconGit />} skillName="Git" />
+    <SkillItem icon={<IconGithub />} skillName="GitHub" />
+    <SkillItem icon={<IconWebpack />} skillName="Webpack" />
+    <SkillItem icon={<IconGulp />} skillName="Gulp" />
+    <SkillItem icon={<IconGrunt />} skillName="Grunt" />
   </div>
-)
+);
 
 export default SkillsTools;

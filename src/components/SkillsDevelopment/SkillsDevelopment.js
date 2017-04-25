@@ -16,16 +16,16 @@ import IconLaravel from '../Icons/IconLaravel';
 const SkillsDevelopment = () => (
   <div className={styles.category}>
     <h3 className={styles.title}>Development</h3>
-    <SkillItem icon={<IconHtml/>} skillName="HTML" />
-    <SkillItem icon={<IconCss/>} skillName="CSS" />
-    <SkillItem icon={<IconJavaScript/>} skillName="JavaScript" />
-    <SkillItem icon={<IconReact/>} skillName="React" />
-    <SkillItem icon={<IconPhp/>} skillName="PHP" />
-    <SkillItem icon={<IconWordPress/>} skillName="WordPress" />
-    <SkillItem icon={<IconSass/>} skillName="Sass" />
-    <SkillItem icon={<IconNode/>} skillName="Node.js" />
-    <SkillItem icon={<IconExpress/>} skillName="Express" />
+    <SkillItem icon={<IconHtml />} skillName="HTML" />
+    <SkillItem icon={<IconCss />} skillName="CSS" />
+    <SkillItem icon={<IconJavaScript />} skillName="JavaScript" />
+    <SkillItem icon={<IconReact />} skillName="React" />
+    <SkillItem icon={<IconPhp />} skillName="PHP" />
+    <SkillItem icon={<IconWordPress />} skillName="WordPress" />
+    <SkillItem icon={<IconSass />} skillName="Sass" />
+    <SkillItem icon={<IconNode />} skillName="Node.js" />
+    <SkillItem icon={<IconExpress />} skillName="Express" />
   </div>
-)
+);
 
 export default SkillsDevelopment;

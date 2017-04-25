@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Section.css';
 
-const Section = (props) => {
+const Section = props => {
   let styleBackground = {};
   if (props.bg) {
     styleBackground = {
@@ -10,7 +10,7 @@ const Section = (props) => {
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
       paddingTop: '0',
-      paddingBottom: '0'
+      paddingBottom: '0',
     };
   }
 
@@ -18,8 +18,7 @@ const Section = (props) => {
     <section className={styles.section} style={styleBackground}>
       {props.children}
     </section>
-  )
-
-}
+  );
+};
 
 export default Section;

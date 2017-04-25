@@ -7,7 +7,7 @@
   background-size: cover;
 
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .header {
     height: calc(100vh - 140px);
   }

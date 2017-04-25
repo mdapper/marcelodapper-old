@@ -16,6 +16,6 @@ const About = () => (
       <Profile />
     </Container>
   </Section>
-)
+);
 
 export default About;

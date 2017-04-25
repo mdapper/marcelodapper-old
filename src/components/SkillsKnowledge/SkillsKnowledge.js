@@ -12,6 +12,6 @@ const SkillsKnowledge = () => (
       <li className={styles.item}>LEMP Stack Configuration</li>
     </ul>
   </div>
-)
+);
 
 export default SkillsKnowledge;

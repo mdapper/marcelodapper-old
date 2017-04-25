@@ -5,6 +5,6 @@ const ExperienceWrap = props => (
   <div className={styles.wrap}>
     {props.children}
   </div>
-)
+);
 
 export default ExperienceWrap;

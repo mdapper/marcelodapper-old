@@ -6,6 +6,6 @@ const SkillItem = props => (
     {props.icon}
     <p className={styles.name}>{props.skillName}</p>
   </div>
-)
+);
 
 export default SkillItem;

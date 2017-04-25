@@ -4,7 +4,7 @@ import styles from './ProjectItem.css';
 import Button from '../Button/Button';
 import SectionDescription from '../SectionDescription/SectionDescription';
 
-const ProjectItem = (props) => {
+const ProjectItem = props => {
   function showButtonCode() {
     const buttonCode = props.projectCodeLink;
     if (buttonCode) {
@@ -12,9 +12,9 @@ const ProjectItem = (props) => {
         <Button
           link={props.projectCodeLink}
           title={props.projectTitle}
-          content='Code'
+          content="Code"
         />
-      )
+      );
     }
   }
 
@@ -25,7 +25,7 @@ const ProjectItem = (props) => {
         <Button
           link={props.projectLiveLink}
           title={props.projectTitle}
-          content='Live'
+          content="Live"
         />
         {showButtonCode()}
       </div>
@@ -33,17 +33,26 @@ const ProjectItem = (props) => {
       <div className={styles.display}>
         <div className={styles.displayItemLg}>
           <div className={styles.displayView}>
-            <img src={'img/portfolio/' + props.projectImage + '.jpg'} alt={props.projectTitle + ' Desktop Image'} />
+            <img
+              src={'img/portfolio/' + props.projectImage + '.jpg'}
+              alt={props.projectTitle + ' Desktop Image'}
+            />
           </div>
         </div>
         <div className={styles.displayItemMd}>
           <div className={styles.displayView}>
-            <img src={'img/portfolio/' + props.projectImage + '-tablet.jpg'} alt={props.projectTitle + ' Tablet Image'} />
+            <img
+              src={'img/portfolio/' + props.projectImage + '-tablet.jpg'}
+              alt={props.projectTitle + ' Tablet Image'}
+            />
           </div>
         </div>
         <div className={styles.displayItemSm}>
           <div className={styles.displayView}>
-            <img src={'img/portfolio/' + props.projectImage + '-mobile.jpg' } alt={props.projectTitle + ' Mobile Image'} />
+            <img
+              src={'img/portfolio/' + props.projectImage + '-mobile.jpg'}
+              alt={props.projectTitle + ' Mobile Image'}
+            />
           </div>
         </div>
       </div>
@@ -52,7 +61,7 @@ const ProjectItem = (props) => {
         {props.children}
       </SectionDescription>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectItem;

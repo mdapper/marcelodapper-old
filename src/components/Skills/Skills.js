@@ -12,15 +12,17 @@ import SkillsDesign from '../SkillsDesign/SkillsDesign';
 import SkillsKnowledge from '../SkillsKnowledge/SkillsKnowledge';
 
 const Skills = () => (
-  <Section bg bgUrl='url("../img/skills.jpg")'>
+  <Section bg bgUrl="url(&quot;../img/skills.jpg&quot;)">
     <div className={styles.overlay}>
       <Container>
         <Row>
-          <SectionHeader titleHeader='Skills' />
+          <SectionHeader titleHeader="Skills" />
         </Row>
         <Row>
           <SectionDescription>
-            <p>I am passionate about the web and love to learn new technologies. Here's what I already know.</p>
+            <p>
+              I am passionate about the web and love to learn new technologies. Here's what I already know.
+            </p>
           </SectionDescription>
         </Row>
         <Row>
@@ -34,6 +36,6 @@ const Skills = () => (
       </Container>
     </div>
   </Section>
-)
+);
 
 export default Skills;
