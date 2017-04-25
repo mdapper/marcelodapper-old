@@ -63,6 +63,6 @@ module.exports = {
       sourceMap: false,
       comments: false
     }),
-    new ExtractTextPlugin('css/style-v1.1.css'),
+    new ExtractTextPlugin('css/style-v1.2.css'),
   ]
 };
