@@ -1,7 +1,13 @@
 import React from 'react';
 
-const IconPhp = () => (
-  <svg x="0px" y="0px" width="64px" height="64px" viewBox="0 0 256 134">
+const IconPhp = props => (
+  <svg
+    x="0px"
+    y="0px"
+    width={props.width}
+    height={props.height}
+    viewBox="0 0 256 134"
+  >
     <g fillRule="evenodd">
       <ellipse fill="#fff" cx="128" cy="66.63" rx="128" ry="66.63" />
       <path

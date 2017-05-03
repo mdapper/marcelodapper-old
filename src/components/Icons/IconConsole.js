@@ -1,7 +1,13 @@
 import React from 'react';
 
-const IconConsole = () => (
-  <svg x="0px" y="0px" width="64px" height="64px" viewBox="0 0 128 128">
+const IconConsole = props => (
+  <svg
+    x="0px"
+    y="0px"
+    width={props.width}
+    height={props.height}
+    viewBox="0 0 128 128"
+  >
     <g
       stroke="#fff"
       strokeWidth="8"

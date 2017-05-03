@@ -1,7 +1,13 @@
 import React from 'react';
 
-const IconJavaScript = () => (
-  <svg x="0px" y="0px" width="64px" height="64px" viewBox="0 0 512 512">
+const IconJavaScript = props => (
+  <svg
+    x="0px"
+    y="0px"
+    width={props.width}
+    height={props.height}
+    viewBox="0 0 512 512"
+  >
     <g transform="translate(384 48)">
       <g id="icon-javascript_1_1_">
         <path d="M-176,40.001h-80v212.498c0,52.58-18.032,67.261-49.412,67.261c-14.705,0-27.948-2.521-38.25-6.063L-352,375.904 c14.7,5.062,37.259,8.096,54.907,8.096C-225.045,384-176,350.129-176,253.02V40.001L-176,40.001z" />

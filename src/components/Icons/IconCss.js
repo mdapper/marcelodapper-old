@@ -1,7 +1,13 @@
 import React from 'react';
 
-const IconCss = () => (
-  <svg x="0px" y="0px" width="64px" height="64px" viewBox="0 0 512 512">
+const IconCss = props => (
+  <svg
+    x="0px"
+    y="0px"
+    width={props.width}
+    height={props.height}
+    viewBox="0 0 512 512"
+  >
     <g transform="translate(336 96)">
       <g>
         <path d="M-79.718,243.488L-79.718,243.488z" />

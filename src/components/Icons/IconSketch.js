@@ -1,7 +1,13 @@
 import React from 'react';
 
-const IconSketch = () => (
-  <svg x="0px" y="0px" width="64px" height="64px" viewBox="0 0 512 512">
+const IconSketch = props => (
+  <svg
+    x="0px"
+    y="0px"
+    width={props.width}
+    height={props.height}
+    viewBox="0 0 512 512"
+  >
     <g fill="none" fillRule="evenodd">
       <path d="M144.790323,96.7151549 L255.602823,85 L366.415323,96.7151549 L452.205645,211.881084 L255.602823,440.823009 L59,211.881084 L144.790323,96.7151549 Z" />
       <g transform="translate(59.000000, 211.881084)">
