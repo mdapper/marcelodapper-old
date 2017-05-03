@@ -1,12 +1,12 @@
 import React from 'react';
 const spacing = 5;
 
-const IconIllustrator = () => (
+const IconIllustrator = props => (
   <svg
     x="0px"
     y="0px"
-    width="64px"
-    height="64px"
+    width={props.width}
+    height={props.height}
     viewBox="0 130.746 595.279 580.398"
     style={{padding: spacing + 'px'}}
   >

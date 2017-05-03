@@ -1,10 +1,5 @@
 // Name our cache
 var CACHE_NAME = 'my-pwa-cache-v1.2.js';
-var urlsToCache = [
-  '/',
-  '/css/style-v1.2.css',
-  '/bundle-v1.2.js'
-];
 
 // Delete old caches that are not our current one!
 self.addEventListener("activate", event => {
@@ -26,10 +21,14 @@ self.addEventListener("activate", event => {
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(function(cache) {
-        // Open a cache and cache our files
-        return cache.addAll(urlsToCache);
-      })
+    .then(function(cache) {
+      // Open a cache and cache our files
+      return cache.addAll([
+        '/',
+        '/css/style-v1.2.css',
+        '/bundle-v1.2.js'
+      ]);
+    })
   );
 });
 

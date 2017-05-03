@@ -6,7 +6,7 @@
   "author": "Marcelo Dapper",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --open",
+    "start": "./node_modules/.bin/webpack-dev-server",
     "lint": "eslint src",
     "test": "jest --coverage",
     "test:watch": "jest --watch",

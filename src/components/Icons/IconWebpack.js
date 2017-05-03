@@ -1,7 +1,13 @@
 import React from 'react';
 
-const IconWebpack = () => (
-  <svg x="0px" y="0px" width="64px" height="64px" viewBox="0 0 600 600">
+const IconWebpack = props => (
+  <svg
+    x="0px"
+    y="0px"
+    width={props.width}
+    height={props.height}
+    viewBox="0 0 600 600"
+  >
     <path d="M300 .1L565 150v299.9L300 599.8 35 449.9V150z" />
     <path
       fill="#8ED6FB"

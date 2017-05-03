@@ -8,6 +8,11 @@
   width: 24px;
   height: 38px;
 }
+@media (min-width: 321px) {
+  .container {
+    bottom: 80px;
+  }
+}
 .mousey {
   padding: 8px 8px;
   height: 100%;
