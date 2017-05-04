@@ -563,7 +563,6 @@ a:active {
   text-decoration: none;
 }
 a:focus {
-  outline: thin dotted;
   text-decoration: underline;
 }
 a:hover,

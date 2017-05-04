@@ -1,0 +1,34 @@
+<svg width="64px" height="64px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" figma:type="canvas">
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 0 2.84217e-14L 512 2.84217e-14L 512 512L 0 512L 0 2.84217e-14Z" fill="#FFFFFF"/>
+</mask>
+<g id="Logo" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Ellipse" figma:type="ellipse">
+<use xlink:href="#path0_fill" transform="translate(6 6)" fill="#263238"/>
+<mask id="mask1_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(6 6)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(6 6)" fill="#24C6DC"/>
+</g>
+</g>
+<g id="Group" figma:type="frame">
+<g id="Vector 2" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(78.5 110)" fill="#24C6DC"/>
+</g>
+<g id="Vector 3" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(192.5 102.5)" fill="#24C6DC"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 500 250C 500 388.071 388.071 500 250 500C 111.929 500 0 388.071 0 250C 0 111.929 111.929 0 250 0C 388.071 0 500 111.929 500 250Z"/>
+<path id="path1_stroke_2x" d="M 475 250C 475 374.264 374.264 475 250 475L 250 525C 401.878 525 525 401.878 525 250L 475 250ZM 250 475C 125.736 475 25 374.264 25 250L -25 250C -25 401.878 98.1217 525 250 525L 250 475ZM 25 250C 25 125.736 125.736 25 250 25L 250 -25C 98.1217 -25 -25 98.1217 -25 250L 25 250ZM 250 25C 374.264 25 475 125.736 475 250L 525 250C 525 98.1217 401.878 -25 250 -25L 250 25Z"/>
+<path id="path2_stroke" d="M 106.5 0L 127.804 -13.0816L 103 -53.4767L 83.6725 -10.1934L 106.5 0ZM 22.8275 248.693L 129.327 10.1934L 83.6725 -10.1934L -22.8275 228.307L 22.8275 248.693ZM 85.1957 13.0816L 172.696 155.582L 215.304 129.418L 127.804 -13.0816L 85.1957 13.0816Z"/>
+<path id="path3_stroke" d="M 0 314L -22.6139 303.341L -39.4213 339L 0 339L 0 314ZM 148 0L 164.27 -18.9814L 139.369 -40.325L 125.386 -10.6588L 148 0ZM 200 212.5L 177.514 201.574L 200 212.5ZM 22.6139 324.659L 170.614 10.6588L 125.386 -10.6588L -22.6139 303.341L 22.6139 324.659ZM 131.73 18.9814C 159.594 42.686 179.274 67.9461 188.535 99.5132C 197.502 128.772 196.432 162.638 177.514 201.574L 222.486 223.426C 246.568 173.862 249.248 126.978 236.34 84.8618C 223.726 45.0539 195.906 8.31402 164.27 -18.9814L 131.73 18.9814ZM 177.514 201.574C 158.271 241.179 134.714 261.893 107.394 273.543C 77.7253 286.547 43.4883 289.02 0 289L 0 339C 45.5117 338.98 89.7086 335.089 127.007 319.536C 166.653 302.629 198.597 272.594 222.486 223.426L 177.514 201.574Z"/>
+</defs>
+</svg>

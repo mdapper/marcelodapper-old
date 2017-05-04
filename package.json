@@ -6,11 +6,14 @@
   "author": "Marcelo Dapper",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --open",
+    "prestart": "rimraf ./public/* && copyfiles ./manifest.json ./img/**/* ./public",
+    "start": "./node_modules/.bin/webpack-dev-server",
     "lint": "eslint src",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "build": "./node_modules/.bin/webpack -p --config webpack.config.production.js"
+    "prebuild": "rimraf ./public/*",
+    "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.production.js",
+    "postbuild": "copyfiles ./manifest.json ./img/**/* ./public"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -38,18 +41,23 @@
     "react-router-dom": "^4.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.24.0",
-    "babel-loader": "^6.4.1",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-2": "^6.22.0",
-    "css-loader": "^0.27.3",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "copyfiles": "^1.2.0",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "inline-manifest-webpack-plugin": "^3.0.1",
     "jest": "^19.0.2",
+    "offline-plugin": "^4.7.0",
     "postcss-loader": "^1.3.3",
     "react-hot-loader": "next",
-    "style-loader": "^0.16.1",
-    "webpack": "^2.3.2",
-    "webpack-dev-server": "^2.4.2"
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.0",
+    "webpack-dev-server": "^2.4.5"
   }
 }

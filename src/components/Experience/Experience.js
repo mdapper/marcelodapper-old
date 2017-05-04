@@ -33,25 +33,25 @@ const Experience = () => (
                 period="January 2016 - Present"
                 company="Sotero Tech"
                 position="Front End Developer"
-                icon={<IconWork />}
+                icon={<IconWork width="24px" height="24px" />}
               />
               <ExperienceItem
                 period="March 2015 - Present"
                 company="Freelance"
                 position="Front End Developer"
-                icon={<IconWork />}
+                icon={<IconWork width="24px" height="24px" />}
               />
               <ExperienceItem
                 period="September 2013 - January 2015"
                 company="Consórcio PSG"
                 position="Software Developer"
-                icon={<IconWork />}
+                icon={<IconWork width="24px" height="24px" />}
               />
               <ExperienceItem
                 period="July 2012 - September 2013"
                 company="Consórcio Pedra Bonita"
                 position="Software Developer"
-                icon={<IconWork />}
+                icon={<IconWork width="24px" height="24px" />}
               />
             </ExperienceWrap>
           </div>
@@ -62,13 +62,13 @@ const Experience = () => (
                 period="July 2013 - December 2017"
                 company="Universidade Estácio de Sá"
                 position="Information Systems"
-                icon={<IconEducation />}
+                icon={<IconEducation width="24px" height="24px" />}
               />
               <ExperienceItem
                 period="Finished on December 2016"
                 company="Treehouse"
                 position="Front End Developer Track"
-                icon={<IconEducation />}
+                icon={<IconEducation width="24px" height="24px" />}
               />
             </ExperienceWrap>
           </div>
