@@ -1,12 +1,23 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
+const InlineManifestWebpackPlugin = require('inline-manifest-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    app: './src/index.js',
+    vendor: [
+      'react',
+      'react-dom',
+      'react-router-dom'
+    ]
+  },
 
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[chunkhash].js',
+    chunkFilename: '[name].[chunkhash].chunk.js',
     path: resolve(__dirname, 'public'),
     publicPath: '/'
   },
@@ -30,7 +41,7 @@ module.exports = {
             {
               loader: 'css-loader',
               options: {
-                sourceMap: false,
+                sourceMap: true,
                 modules: true,
                 importLoaders: 1,
                 localIdentName: '[name]__[local]__[hash:base64:5]',
@@ -59,10 +70,19 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false,
-      comments: false
+    new ExtractTextPlugin('css/styles.[chunkhash].css'),
+    new InlineManifestWebpackPlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: ['vendor', 'manifest'],
+      minChunks: Infinity,
     }),
-    new ExtractTextPlugin('css/style-v1.2.css'),
+    new HtmlWebpackPlugin({
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true
+      },
+      template: './src/index.html'
+    }),
+    new OfflinePlugin(),
   ]
 };

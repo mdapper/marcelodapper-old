@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -9,7 +10,7 @@ module.exports = {
     './src/index.js',
   ],
   output: {
-    filename: 'bundle-v1.2.js',
+    filename: 'bundle.js',
     path: resolve(__dirname, 'public'),
     publicPath: '/'
   },
@@ -21,6 +22,7 @@ module.exports = {
   },
 
   devServer: {
+    stats: 'errors-only',
     hot: true,
     historyApiFallback: true,
     contentBase: resolve(__dirname, 'public'),
@@ -72,5 +74,8 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
   ],
 };
