@@ -1,0 +1,22 @@
+:global .fade-enter {
+  opacity: 0;
+}
+:global .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity .8s ease-in;
+}
+
+
+:global .move-enter.move-enter-active {
+	animation: moveToLeftFade .8s cubic-bezier(0, .9, .3, 1.1) forwards;
+}
+:global @keyframes moveToLeftFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
