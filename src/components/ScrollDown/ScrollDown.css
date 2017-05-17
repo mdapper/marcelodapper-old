@@ -4,15 +4,23 @@
   bottom: 50px;
   left: 0;
   margin: auto;
-
   width: 24px;
   height: 38px;
 }
-@media (min-width: 321px) {
+@media (min-width: 360px) {
   .container {
     bottom: 80px;
   }
 }
+@media (max-width: 767px) and (orientation: landscape) {
+  .container {
+    right: 15px;
+    left: auto;
+    bottom: 80px;
+  }
+}
+
+
 .mousey {
   padding: 8px 8px;
   height: 100%;
@@ -20,6 +28,8 @@
   border-radius: 25px;
   opacity: 0.75;
 }
+
+
 .scroller {
   width: 4px;
   height: 4px;
@@ -30,8 +40,18 @@
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
+
+
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(10px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
 }

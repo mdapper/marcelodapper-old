@@ -9,12 +9,21 @@
 .container {
   padding-top: 40px;
 }
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 500px;
+  }
+}
 @media (min-width: 768px) {
   .container {
     flex: 1;
   }
-  .container:not(:last-of-type) {
-    margin-right: 24px;
+  .container:nth-child(odd) {
+    margin-right: 12px;
+  }
+  .container:nth-child(even) {
+    margin-left: 12px;
   }
 }
 

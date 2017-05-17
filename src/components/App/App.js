@@ -1,6 +1,6 @@
 import React from 'react';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop/ScrollToTop';
 import createBrowserHistory from 'history/createBrowserHistory';
 const history = createBrowserHistory();
@@ -19,27 +19,29 @@ import styles from './App.css';
 
 const App = () => (
   <Router history={history}>
-    <Route render={({ location }) => (
-      <div className={styles.app}>
-        <ScrollToTop />
-        <Navbar />
-        <CSSTransitionGroup
-          transitionName="fade"
-          transitionEnterTimeout={800}
-          transitionLeave={false}
-        >
-          <Switch key={location.key} location={location}>
-            <Route exact path="/" component={Home} />
-            <Route path="/skills" component={Skills} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/experience" component={Experience} />
-            <Route path="/contact" component={Contact} />
-            <Route component={NotFound} />
-          </Switch>
-        </CSSTransitionGroup>
-        <Footer />
-      </div>
-    )}/>
+    <Route
+      render={({ location }) => (
+        <div className={styles.app}>
+          <ScrollToTop />
+          <Navbar />
+          <CSSTransitionGroup
+            transitionName="fade"
+            transitionEnterTimeout={800}
+            transitionLeave={false}
+          >
+            <Switch key={location.key} location={location}>
+              <Route exact path="/" component={Home} />
+              <Route path="/skills" component={Skills} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/experience" component={Experience} />
+              <Route path="/contact" component={Contact} />
+              <Route component={NotFound} />
+            </Switch>
+          </CSSTransitionGroup>
+          <Footer />
+        </div>
+      )}
+    />
   </Router>
 );
 

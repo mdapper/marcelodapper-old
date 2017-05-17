@@ -8,22 +8,22 @@ const Profile = () => (
     </div>
     <div className={styles.bio}>
       <h3>Hello, my name is Marcelo Dapper!</h3>
-      <p>I share here my work as a Front End Developer.</p>
+      <p>Here, you can see my work as a Front End Developer.</p>
       <p>
-        I have worked for several years in the Oil and Gas sector as a software developer. But in the last two years I started to study Front End and fell in love with it. So I decided to make a shift in my carrer.
+        For several years, I worked in the Oil and Gas sector as a software developer. In the last two years, I studied Front End development and fell in love with it. So, I decided to make a shift in my career.
       </p>
       <p>
-        Since then, I have learned a lot and had the opportunity to work on some cool projects that I list here.
+        Since then, I had the opportunity to learn a lot and apply what I gathered in some cool projects that you can see here.
       </p>
       <p>
-        In the past months I have launched a blog called
+        I also launched a blog.
         {' '}
-        <a href="https://devheroes.io/" target="_blank">DevHeroes</a>
+        <a href="https://devheroes.io/" target="_blank" rel="noopener">DevHeroes</a>
         {' '}
-        (in portuguese) to talk about web development, mostly Front End. I am writing a series about JavaScrit, since mastering it is my foucus now. I decided to start with the basics, so more people can go along with it. But I intend to go until I can cover advanced topics such as ES6, functional programing and the use of some frameworks like React and Vue.js.
+        is a blog written in Portuguese to share and talk about web development. I am writing a series about JavaScrit, since mastering it is my focus now. I decided to start with the basics, so more people can go along with it. But I intend to go until I can cover advanced topics such as ES6, functional programing and the use of some frameworks like React and Vue.js.
       </p>
       <p>
-        When I am not building new stuff or writing for my blog, I like to read, play video games, watch movies and series with my wife.
+        When I am not building new stuff, or writing for my blog, I like to read, play video games, watch movies and series with my wife.
       </p>
     </div>
   </div>

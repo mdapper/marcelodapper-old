@@ -1,5 +1,5 @@
 {
-  "short_name": "Marcelo Dapper",
+  "short_name": "Marcelo",
   "name": "Marcelo Dapper - Front End Developer",
   "description": "I am a Front End Developer based on Brazil and this is my portfolio page.",
   "icons": [
@@ -15,7 +15,7 @@
     }
   ],
   "start_url": "/",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#514A9D",
-  "background_color": "#212121"
+  "background_color": "#514A9D"
 }

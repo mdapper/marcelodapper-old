@@ -7,6 +7,7 @@ const Button = props => (
     href={props.link}
     title={props.title + ' ' + props.content}
     target="_blank"
+    rel="noopener"
   >
     {props.content}
   </a>

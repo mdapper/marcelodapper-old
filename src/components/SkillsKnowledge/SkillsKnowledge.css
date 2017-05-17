@@ -25,3 +25,11 @@
   top: 3px;
   left: 0;
 }
+@media (max-width: 414px) {
+  .title {
+    text-align: center;
+  }
+  .category {
+    width: 100%;
+  }
+}
