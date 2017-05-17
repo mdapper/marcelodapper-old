@@ -9,7 +9,9 @@
   flex: 1;
 }
 .link:hover path,
-.link:hover polygon {
+.link:focus path,
+.link:hover polygon,
+.link:focus polygon {
   fill: #24C6DC;
 }
 .link svg {
@@ -18,7 +20,8 @@
   transform: scale(1);
   transition: transform .3s ease-out;
 }
-.link svg:hover {
+.link:hover svg,
+.link:focus svg {
   transform: scale(1.2) translateY(-8px);
 }
 

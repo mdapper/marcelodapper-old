@@ -28,7 +28,7 @@ const Projects = () => (
             My focus was performance, so I used system fonts, SVG for the icons and vanilla JavaScript where needed. I made a custom WordPress template for these requirements.
           </p>
           <p>
-            This also was the first project that I installed and configured a LEMP Stack (Linux, Nginx, MySQL and PHP 7.0) on DigitalOcean. Since I was using my own server I configured a SSL certificate using Let's Encrypt.
+            This also was the first project that I installed and configured a LEMP Stack (Linux, Nginx, MySQL and PHP 7.0) on DigitalOcean. And I configured the SSL certificate using Let's Encrypt.
           </p>
           <ProjectTags
             tags={[
@@ -51,7 +51,7 @@ const Projects = () => (
           projectImage="dapdem"
           projectLiveLink="https://www.dapper-demo.com/"
         >
-          <p>A store with modern layout using WooCommerce.</p>
+          <p>I made the layout and custom WooCommerce theme for this store.</p>
           <p>
             Installed and configured a LEMP Stack and SSL certificate using Let's Encrypt on DigitalOcean.
           </p>

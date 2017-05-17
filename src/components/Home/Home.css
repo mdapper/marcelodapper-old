@@ -40,14 +40,14 @@
 .title {
   font-family: 'Allerta Stencil', sans-serif;
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   animation-delay: .5s;
   opacity: 0;
   animation: pop-in .8s cubic-bezier(0, .9, .3, 1.2) forwards;
 }
 @media (min-width: 768px) {
   .title {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 
@@ -58,7 +58,7 @@
 }
 
 .sub {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   animation-delay: .9s;
   opacity: 0;
   animation: pop-in .8s cubic-bezier(0, .9, .3, 1.2) forwards;

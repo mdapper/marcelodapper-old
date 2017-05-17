@@ -21,7 +21,7 @@ const Contact = () => (
       <Row>
         <SectionDescription>
           <p>
-            I am available to work on new projects at the moment. Feel free to get in touch with me:
+            I am available to work on new projects. Feel free to get in touch with me:
           </p>
           <ul>
             <ContactItem
