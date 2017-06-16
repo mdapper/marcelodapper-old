@@ -20,7 +20,7 @@ const Profile = () => (
         {' '}
         <a href="https://devheroes.io/" target="_blank" rel="noopener">DevHeroes</a>
         {' '}
-        is a blog written in Portuguese to share and talk about web development. I am writing a series about JavaScrit, since mastering it is my focus now. I decided to start with the basics, so more people can go along with it. But I intend to go until I can cover advanced topics such as ES6, functional programing and the use of some frameworks like React and Vue.js.
+        is a blog written in Portuguese to share and talk about web development. I am writing a series about JavaScript, since mastering it is my focus now. I decided to start with the basics, so more people can go along with it. But I intend to go until I can cover advanced topics such as ES6, functional programing and the use of some frameworks like React and Vue.js.
       </p>
       <p>
         When I am not building new stuff, or writing for my blog, I like to read, play video games, watch movies and series with my wife.
